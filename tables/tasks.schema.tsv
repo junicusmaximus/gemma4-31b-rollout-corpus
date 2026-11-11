@@ -1,0 +1,7 @@
+column	type	meaning	source	source_sha256
+task_id	string	competition task id	results rows	input file (hash in build_manifest.json)
+repository	string	part of the task id before the first underscore	builder	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+resolved_s1	bool	resolved in decoding seed 1 (empty if no valid row)	rollouts.tsv	input file (hash in build_manifest.json)
+resolved_s2	bool	resolved in decoding seed 2	rollouts.tsv	input file (hash in build_manifest.json)
+resolved_s7	bool	resolved in decoding seed 7	rollouts.tsv	input file (hash in build_manifest.json)
+stability_class	string	rule 3 with CLAR1 rule 3: always/sometimes/never/incomplete (3 seeds) or both/one/neither/incomplete (2 seeds); empty with one seed	paper2_seed_analysis.stability	8c92b2630f4d97d76041e6265166bc044f61de6b7638aaa41e57bb089994ced3

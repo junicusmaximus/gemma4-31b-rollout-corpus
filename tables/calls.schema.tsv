@@ -1,0 +1,20 @@
+column	type	meaning	source	source_sha256
+rollout_id	string	key into rollouts.tsv	builder	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+position	int	0-based position over all parsed calls of the trace	budget_graph_v083b.parse order	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+charged_position	int	1-based position among charged calls; empty if not charged	cap_corrected.status	71370b0309747d81fc4130acfaf3125f990868ad9d553369b74faff829ede436
+tool	string	tool name	trace	input file (hash in build_manifest.json)
+kind	string	read, edit, test, graph (kind() of v083b); free for submit_patch and get_status	budget_graph_v083b.kind	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+status	string	exec_ok, exec_error, parse_failed, budget_refused, unknown (CLAR6 rule 1)	cap_corrected.status	71370b0309747d81fc4130acfaf3125f990868ad9d553369b74faff829ede436
+charged	bool	the harness charged the call (CLAR3, CLAR6)	cap_corrected.status	71370b0309747d81fc4130acfaf3125f990868ad9d553369b74faff829ede436
+fail_case	bool	the call is a failed edit_file case of v082	v082 cases.jsonl	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+fail_budget	bool	the failed edit was refused by budget (v082 F-budget)	v082 cases.jsonl cause_detail	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+fail_cause	string	v082 cause letter A to F	v082 cases.jsonl cause	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+fail_lacks_mandatory	bool	cause F and the arguments lack filepath, old_string or new_string (CLAR5)	failed_edit_features.MANDATORY	36321db2e0dd8ab17f00f1abb4d7b4855e2e00d2ed73099c3dd6864df3668fbb
+fail_only_filepath_new_string	bool	cause F and the argument keys are exactly filepath and new_string (CLAR5)	failed_edit_features	36321db2e0dd8ab17f00f1abb4d7b4855e2e00d2ed73099c3dd6864df3668fbb
+fail_strict_resend	bool	the very next call has the same tool and an identical argument object (CLAR5)	failed_edit_features	36321db2e0dd8ab17f00f1abb4d7b4855e2e00d2ed73099c3dd6864df3668fbb
+fail_next_action	string	v082 next action label	v082 cases.jsonl next_action	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+fail_recovered	bool	the failure was later recovered (v082)	v082 cases.jsonl recovered	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+fail_calls_until_recovery	int	v082 calls until recovery (episode openers)	v082 cases.jsonl calls_until_recovery	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+episode_no	int	1-based number of the failure episode in the rollout (analysed failures only); empty otherwise	v082 episode_start	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+episode_start	bool	the case opens an episode (v082)	v082 cases.jsonl episode_start	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+episode_recovered	bool	the episode's opening failure was recovered	v082 cases.jsonl recovered of the opener	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a

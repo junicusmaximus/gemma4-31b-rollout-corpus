@@ -1,0 +1,32 @@
+id	reason
+lc_items_all	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+lc_patch_a	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+red_own_chars	from the release tool's manifests (redaction report), not in the tables
+red_span_chars	from the release tool's manifests (redaction report), not in the tables
+tr_released	from the release tool's manifests (redaction report), not in the tables
+tr_left_out	from the release tool's manifests (redaction report), not in the tables
+lc_patch_w	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+lc_patch_d	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+lc_nogold_drawn	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+lc_patch2_a	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+lc_cap2_a	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+lc_cap2_n	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+lc_undecided	from the label check comparison outputs (analysis/paper2-label-audit-boss-v090/compare_output_v2/, compare_output_v2_patchclass_v2/, compare_output_corrected/), not in the tables
+rf_n	from the stamp files of the rule files (briefing rules folder), not in the tables
+rf_first_time	from the stamp files of the rule files (briefing rules folder), not in the tables
+rf_last_time	from the stamp files of the rule files (briefing rules folder), not in the tables
+rf_last_clar	from the stamp files of the rule files (briefing rules folder), not in the tables
+screen_rollouts	quoted from a sealed report
+mclose_compliance	quoted from a sealed report
+s1_stack_compliance	quoted from a sealed report
+rb_adoption	quoted from a sealed report
+rd_scratch_last	from the reader's notes released with the label check, not in the tables
+rd_capped_edit	from the reader's notes released with the label check, not in the tables
+rd_test_pass	from the reader's notes released with the label check, not in the tables
+rd_test_yes	from the reader's notes released with the label check, not in the tables
+rd_fail_never_ran	from the reader's notes released with the label check, not in the tables
+rd_fail	from the reader's notes released with the label check, not in the tables
+rd_fail_loop	from the reader's notes released with the label check, not in the tables
+rd_unrec_late	from the reader's notes released with the label check, not in the tables
+rd_unrec	from the reader's notes released with the label check, not in the tables
+rd_res_nogold	from the reader's notes released with the label check, not in the tables

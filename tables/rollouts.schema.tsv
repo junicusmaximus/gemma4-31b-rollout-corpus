@@ -1,0 +1,65 @@
+column	type	meaning	source	source_sha256
+rollout_id	string	run and task id joined by a slash; unique key	builder	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+scope	string	dev (development screens) or main (baseline over the 95 valid tasks)	builder config	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+run	string	result folder name of the rollout set	builder config	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+arm	string	baseline, M-CLOSE, S1 or read-bundle	builder config (inventory v085)	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+baseline_package	bool	the run used the unchanged baseline package	builder config	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+temperature	float	sampling temperature of the bundle	v082 rollouts.jsonl field temperature	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+decoding_seed	string	decoding seed (1, 2, 7; ? if not recorded)	builder config	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+task_id	string	competition task id	task_results.jsonl instance_id	input file (hash in build_manifest.json)
+repository	string	part of the task id before the first underscore	builder	10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4
+resolved	bool	hidden tests passed (rule 1)	task_results.jsonl resolved	input file (hash in build_manifest.json)
+error	string	harness error text (budget stop or timeout), empty if none	task_results.jsonl error	input file (hash in build_manifest.json)
+test_exit_code	int	exit code of the test command	task_results.jsonl	input file (hash in build_manifest.json)
+agent_patch_size	int	bytes of the stored patch	task_results.jsonl	input file (hash in build_manifest.json)
+duration_seconds	float	local wall time of the rollout	task_results.jsonl	input file (hash in build_manifest.json)
+tool_calls	int	calls charged by the harness	task_results.jsonl	input file (hash in build_manifest.json)
+total_llm_calls	int	model calls	task_results.jsonl	input file (hash in build_manifest.json)
+attempted_calls	int	trace calls other than submit_patch and get_status (CLAR3)	call_kinds_v2.py attempted	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+charged_calls	int	attempted calls minus parse failed and budget refused (CLAR3); equals tool_calls	call_kinds_v2.py charged	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+parse_failed_calls	int	attempted calls whose arguments could not be parsed	call_kinds_v2.py parse_failed	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+budget_refused_calls	int	attempted calls refused because the budget was spent	call_kinds_v2.py budget_refused	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+att_read	int	attempted calls of kind read (kind() of v083b)	call_kinds_v2.py att_read	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+att_edit	int	attempted calls of kind edit	call_kinds_v2.py att_edit	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+att_test	int	attempted calls of kind test	call_kinds_v2.py att_test	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+att_graph	int	attempted calls of kind graph	call_kinds_v2.py att_graph	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+chg_read	int	charged calls of kind read	call_kinds_v2.py chg_read	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+chg_edit	int	charged calls of kind edit	call_kinds_v2.py chg_edit	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+chg_test	int	charged calls of kind test	call_kinds_v2.py chg_test	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+chg_graph	int	charged calls of kind graph	call_kinds_v2.py chg_graph	5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1
+n_graph_calls	int	calls of the three code graph tools	budget_graph_v083b.py n_get_code_neighbors + n_get_code_subgraph + n_search_similar_code	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+compaction_events	int	prompt drops of 3,000 tokens or more (hidden compaction requests)	budget_graph_v083b.py compactions	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+gen_tokens	int	generated tokens (usage fields)	budget_graph_v083b.py gen_tokens	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+proj_b28_30	float	projected scorer seconds, variant B, cap 28, 30 tok/s	budget_graph_v083b.py B28_30	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+proj_b28_34	float	same at 34 tok/s	budget_graph_v083b.py B28_34	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+proj_b28_40	float	same at 40 tok/s	budget_graph_v083b.py B28_40	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+proj_b34_30	float	projected scorer seconds, variant B, cap 34, 30 tok/s	budget_graph_v083b.py B34_30	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+proj_b34_34	float	same at 34 tok/s	budget_graph_v083b.py B34_34	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+proj_b34_40	float	same at 40 tok/s	budget_graph_v083b.py B34_40	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+capped	bool	tool_calls of the row is at least 28 (rule 6, CLAR3C)	task_results.jsonl tool_calls	input file (hash in build_manifest.json)
+cap_class	string	corrected cap class (CLAR6 with addition 1): cut_off_mid_work, finished_and_padded or undecided; empty if not capped	cap_corrected_a1.py corrected_class	4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997
+patch_at_cap	bool	corrected rule: a successful edit at or before the cap position	cap_corrected_a1.py corrected_patch_at_cap	4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997
+test_after_last_edit	bool	corrected rule: an executed test after the last successful edit	cap_corrected_a1.py corrected_test_after	4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997
+submit	string	corrected rule: submit timing (before_cap, after_cap, none)	cap_corrected_a1.py corrected_submit	4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997
+last6	string	corrected rule: kinds of charged calls 23 to 28	cap_corrected_a1.py corrected_last6	4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997
+cap_class_sensitivity	string	cap class of clarification 4 (parse failed calls not ok)	cap_sensitivity.py via cap_corrected_a1.py	4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997
+cap_class_stamped	string	cap class of the stamped rule (rule 6, CLAR2)	budget_graph_v083b.py cap_class	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+patch_at_cap_stamped	bool	stamped rule: patch at cap	budget_graph_v083b.py patch_at_cap	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+test_after_last_edit_stamped	bool	stamped rule: test after last edit	budget_graph_v083b.py test_after_last_edit	781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8
+patch_class	string	patch class (rule 7, CLAR7): resolved, gold file touched, no gold file, scratch only, no patch	patch_class_v2.py class	ce267fd3d6a435307372bbde87ab35c71101ae9a62408ebb9bf788706edc7951
+gold_file_hit	bool	the stored patch touches a file of the gold patch (rule 7, CLAR7)	patch_class_v2.py gold_file_hit	ce267fd3d6a435307372bbde87ab35c71101ae9a62408ebb9bf788706edc7951
+patch_flags	string	flags of the patch class script (for example patch_not_stored)	patch_class_v2.py flags	ce267fd3d6a435307372bbde87ab35c71101ae9a62408ebb9bf788706edc7951
+patch_class_stamped	string	patch class of the stamped script (first gold file only)	patch_class.py class	43464c2d703e4318c2685fe37abbebbca262154bac60b2b8b99e8d0c57e21439
+gold_file_hit_stamped	bool	gold_file_hit of the stamped script	patch_class.py gold_file_hit	43464c2d703e4318c2685fe37abbebbca262154bac60b2b8b99e8d0c57e21439
+edit_file_calls	int	edit_file calls (v082)	classify_edit_failures.py via run_v082_explicit.py edit_calls	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+edit_fail	int	failed edit_file calls including budget refusals (v082)	v082 edit_fail	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+edit_fail_nobudget	int	failed edit_file calls analysed (budget refusals left out, parse failures in)	v082 edit_fail_nobudget	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+last_edit_failed	bool	the last edit call failed (v082)	v082 last_edit_failed	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+last_edit_failed_nobudget	bool	the last edit call failed, budget refusals left out (v082)	v082 last_edit_failed_nobudget	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+heredoc_cmds	int	run_command calls writing files by heredoc (v082)	v082 heredoc_cmds	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+malformed_cmds	int	run_command calls that did not parse (v082)	v082 malformed_cmds	0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a
+trace_file	string	filled by the release tool	release tool	input file (hash in build_manifest.json)
+trace_status	string	filled by the release tool	release tool	input file (hash in build_manifest.json)
+placeholders	int	filled by the release tool	release tool	input file (hash in build_manifest.json)
+trace_sha256_redacted	string	filled by the release tool	release tool	input file (hash in build_manifest.json)
+trace_sha256_original	string	filled by the release tool	release tool	input file (hash in build_manifest.json)

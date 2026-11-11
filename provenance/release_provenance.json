@@ -1,0 +1,256 @@
+{
+  "analysis_rows": 395,
+  "call_rows": 10109,
+  "destinations": {
+    "code_and_tables": "https://github.com/junicusmaximus/gemma4-31b-rollout-corpus",
+    "traces": "https://www.kaggle.com/datasets/junicus/gemma4-31b-rollout-corpus"
+  },
+  "development_rows": 110,
+  "main_rows": 285,
+  "prior_trace_audit": {
+    "elapsed_seconds": 314.1088971858844,
+    "example_domain_occurrences": 35,
+    "protected_hits": 0,
+    "report_sha256": "87d2254dcb8a107d623cbb351ebeb7faa9dc47e1eb3215d14e0b0384c074714f",
+    "traces": 201,
+    "unchecked": 0
+  },
+  "schema": "paper2-integration-provenance-v1",
+  "sealed_table_build_manifest_sha256": "bd25ff9a635e661ee1107d01db0a8d841492fa161c9ef3349671f20bbda6cc9e",
+  "sources": [
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/tables/rollouts.tsv",
+      "public_sha256": "04550df32771a9b7033fa21cd6086fe8bd78dab64c93d9b27387846d77bf7aa7",
+      "role": "sealed_table",
+      "source_sha256": "04550df32771a9b7033fa21cd6086fe8bd78dab64c93d9b27387846d77bf7aa7"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/tables/calls.tsv",
+      "public_sha256": "826a53759144aace6f1db480275f7a047330d7036f19226b3914892d66cd6ace",
+      "role": "sealed_table",
+      "source_sha256": "826a53759144aace6f1db480275f7a047330d7036f19226b3914892d66cd6ace"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/tables/tasks.tsv",
+      "public_sha256": "c8e7e1edfdea8cbfbc9261a5cbdef39eb8b6d98e99e367d048fbfb34457e178b",
+      "role": "sealed_table",
+      "source_sha256": "c8e7e1edfdea8cbfbc9261a5cbdef39eb8b6d98e99e367d048fbfb34457e178b"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/tables/rollouts.schema.tsv",
+      "public_sha256": "639c47a4dccd828fcf632a32d0ef18bd5faa3bfdcc8d809b8dac7f05d568879f",
+      "role": "sealed_table",
+      "source_sha256": "639c47a4dccd828fcf632a32d0ef18bd5faa3bfdcc8d809b8dac7f05d568879f"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/tables/calls.schema.tsv",
+      "public_sha256": "af626f54188b73afe88287c849909400dae731fdbb527bda6d3ba5da143da337",
+      "role": "sealed_table",
+      "source_sha256": "af626f54188b73afe88287c849909400dae731fdbb527bda6d3ba5da143da337"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/tables/tasks.schema.tsv",
+      "public_sha256": "136507141049d1b43c92278930a2c167178720c088d5b7f34753b1754c7b4e09",
+      "role": "sealed_table",
+      "source_sha256": "136507141049d1b43c92278930a2c167178720c088d5b7f34753b1754c7b4e09"
+    },
+    {
+      "change": "public copy: server path prefix replaced by PROJECT_ROOT; see provenance/public_copies.tsv",
+      "public_path": "github/labels/budget_graph_v083b.py",
+      "public_sha256": "88f3c921e1a12c40ff2707fea4d12d6127ab258d0ae9e9646b545c30904e275c",
+      "role": "v083b",
+      "source_sha256": "781a5deeb3c36825c79bfe1e2a3d1303ccee54f45b99292356a0a73785c38ee8"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/call_kinds_v2.py",
+      "public_sha256": "5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1",
+      "role": "call_kinds_v2",
+      "source_sha256": "5bb31dd16d688ad5c1b97bfbb321ff176f41dee5dad5cee471dcf1dd1d6192e1"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/cap_corrected.py",
+      "public_sha256": "71370b0309747d81fc4130acfaf3125f990868ad9d553369b74faff829ede436",
+      "role": "cap_corrected",
+      "source_sha256": "71370b0309747d81fc4130acfaf3125f990868ad9d553369b74faff829ede436"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/cap_corrected_a1.py",
+      "public_sha256": "4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997",
+      "role": "cap_corrected_a1",
+      "source_sha256": "4dbc6fc60cc8bd0f449a480328681058859ab88ac8131c048779db593f5b6997"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/cap_sensitivity.py",
+      "public_sha256": "dee6625bc0d3003186dd381602fc548ba6c8d703be0c4c39024701ae8a765cb6",
+      "role": "cap_sensitivity",
+      "source_sha256": "dee6625bc0d3003186dd381602fc548ba6c8d703be0c4c39024701ae8a765cb6"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/paper2_seed_analysis.py",
+      "public_sha256": "8c92b2630f4d97d76041e6265166bc044f61de6b7638aaa41e57bb089994ced3",
+      "role": "seed_analysis",
+      "source_sha256": "8c92b2630f4d97d76041e6265166bc044f61de6b7638aaa41e57bb089994ced3"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/patch_class_v2.py",
+      "public_sha256": "ce267fd3d6a435307372bbde87ab35c71101ae9a62408ebb9bf788706edc7951",
+      "role": "patch_class_v2",
+      "source_sha256": "ce267fd3d6a435307372bbde87ab35c71101ae9a62408ebb9bf788706edc7951"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/patch_class.py",
+      "public_sha256": "43464c2d703e4318c2685fe37abbebbca262154bac60b2b8b99e8d0c57e21439",
+      "role": "patch_class",
+      "source_sha256": "43464c2d703e4318c2685fe37abbebbca262154bac60b2b8b99e8d0c57e21439"
+    },
+    {
+      "change": "public copy: server path prefix replaced by PROJECT_ROOT; see provenance/public_copies.tsv",
+      "public_path": "github/labels/classify_edit_failures.py",
+      "public_sha256": "ab0e2fb44a678103a63df1ebe1880919769964970d4ae27443306166cbfc03a7",
+      "role": "v082_classifier",
+      "source_sha256": "0d8d826475722ae47da5be87facfec9d04551999a943091d5724e87f5a168f7a"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/run_v082_explicit.py",
+      "public_sha256": "9e7a4608c9c5e382a33d97d4262aced8901fb8b1e49ee54709abdd4c6e2c0238",
+      "role": "v082_wrapper",
+      "source_sha256": "9e7a4608c9c5e382a33d97d4262aced8901fb8b1e49ee54709abdd4c6e2c0238"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/labels/failed_edit_features.py",
+      "public_sha256": "36321db2e0dd8ab17f00f1abb4d7b4855e2e00d2ed73099c3dd6864df3668fbb",
+      "role": "failed_edit_features",
+      "source_sha256": "36321db2e0dd8ab17f00f1abb4d7b4855e2e00d2ed73099c3dd6864df3668fbb"
+    },
+    {
+      "change": "public copy: server path prefix replaced by PROJECT_ROOT; see provenance/public_copies.tsv",
+      "public_path": "github/labels/build_release_tables.py",
+      "public_sha256": "0a88831170712cbf1f15811923eaed2080309ee1bf8a481d8d6bcdefb73574eb",
+      "role": "builder",
+      "source_sha256": "10a3663e180cc9750060cca386ec5d1113d8a3764b0c830392f416a67781b4d4"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/verify/paper2_seed_analysis.py",
+      "public_sha256": "8c92b2630f4d97d76041e6265166bc044f61de6b7638aaa41e57bb089994ced3",
+      "role": "verifier_dependency",
+      "source_sha256": "8c92b2630f4d97d76041e6265166bc044f61de6b7638aaa41e57bb089994ced3"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/verify/test_paper2_seed_analysis.py",
+      "public_sha256": "ab82e70f7e691afe9e86cbb076634a9e9e8d22163a2305ba2b6b81814e5abc56",
+      "role": "verifier_dependency",
+      "source_sha256": "ab82e70f7e691afe9e86cbb076634a9e9e8d22163a2305ba2b6b81814e5abc56"
+    },
+    {
+      "change": "path-only derivative: sibling-only seed import and explanatory docstring; formulas unchanged",
+      "public_path": "github/verify/verify_paper_numbers_r4.py",
+      "public_sha256": "ed3642b92bad215c1524fa39cc1fa71b8dff904a118c2a57ba53d2296d575a9b",
+      "role": "table_verifier",
+      "source_sha256": "181e7bdc4767d79915d8c7cc74a2c7bb9de12b1a8086e32d484d235a36bdfb96"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/verify/test_verify_paper_numbers_r4.py",
+      "public_sha256": "60dee904dc2ef768ff4986048f821b23533eb338490b0853b5a0c1a56797c5fa",
+      "role": "table_verifier",
+      "source_sha256": "60dee904dc2ef768ff4986048f821b23533eb338490b0853b5a0c1a56797c5fa"
+    },
+    {
+      "change": "A/H ID-only derivative; same membership/order; private notes omitted",
+      "public_path": "github/verify/tables_phase_b_s7_register.md",
+      "public_sha256": "76add5f991340da85c07c283dd785cb77cc695ce4cef94a5903221b23b990f3d",
+      "role": "number_register",
+      "source_sha256": "618b6d0c78a50b00d58b5de3f267f2e25f92401ae4836911904cbd23c94ba3ed"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/verify/reference/register_values.tsv",
+      "public_sha256": "1d3bcf2b9679931b733256a6fe1e0103b5c30b9b6600327afd6b3f1772f0515e",
+      "role": "sealed_verifier_reference",
+      "source_sha256": "1d3bcf2b9679931b733256a6fe1e0103b5c30b9b6600327afd6b3f1772f0515e"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/verify/reference/all_values.tsv",
+      "public_sha256": "4bbc08bc8a0daaa8ecc7b52da900d745c41cb1f0aaef978bc1a030f916a86920",
+      "role": "sealed_verifier_reference",
+      "source_sha256": "4bbc08bc8a0daaa8ecc7b52da900d745c41cb1f0aaef978bc1a030f916a86920"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/verify/reference/not_computed.tsv",
+      "public_sha256": "e28f7136d6c3fefe5f993d9e1103f61b239e1d7f74f1653b89bdd5ad6aea7ebd",
+      "role": "sealed_verifier_reference",
+      "source_sha256": "e28f7136d6c3fefe5f993d9e1103f61b239e1d7f74f1653b89bdd5ad6aea7ebd"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/verify/reference/seed_by_repository.json",
+      "public_sha256": "7cff85779d8e9aa8738351d59cfcec693267cee677b4f22985381e49753a2d14",
+      "role": "sealed_repository_seed_summary",
+      "source_sha256": "7cff85779d8e9aa8738351d59cfcec693267cee677b4f22985381e49753a2d14"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/figures/make_figures.py",
+      "public_sha256": "729edabfdc7108c417f1736071a27a7737b43fd8a4482d3f77d990041d2effa4",
+      "role": "figure_script",
+      "source_sha256": "729edabfdc7108c417f1736071a27a7737b43fd8a4482d3f77d990041d2effa4"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/figures/fig1.png",
+      "public_sha256": "16362bea3f0be192cd5a1b91838783e620da58a3ae875b9af014c0d024db4e81",
+      "role": "figure_image",
+      "source_sha256": "16362bea3f0be192cd5a1b91838783e620da58a3ae875b9af014c0d024db4e81"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/figures/fig1_data.csv",
+      "public_sha256": "00b02ab0d0493d91696fcce16571c39a9f30683dda08dc6c8873c46cfbac8860",
+      "role": "figure_data",
+      "source_sha256": "00b02ab0d0493d91696fcce16571c39a9f30683dda08dc6c8873c46cfbac8860"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/figures/card.png",
+      "public_sha256": "667a74db0f9e8ad46b1de1216ca6685d0b2ac9ccea1609cf255ae5df172aad99",
+      "role": "figure_image",
+      "source_sha256": "667a74db0f9e8ad46b1de1216ca6685d0b2ac9ccea1609cf255ae5df172aad99"
+    },
+    {
+      "change": "byte-identical copy",
+      "public_path": "github/figures/card_2x.png",
+      "public_sha256": "f8a8d194f49720ed5a0a7fef55b18e73f297d652a7e69dba017dccda97d5a288",
+      "role": "figure_image",
+      "source_sha256": "f8a8d194f49720ed5a0a7fef55b18e73f297d652a7e69dba017dccda97d5a288"
+    }
+  ],
+  "tasks": 95,
+  "trace_index": {
+    "excluded_email": 4,
+    "included_redacted": 201,
+    "not_audited": 190
+  },
+  "trace_source_manifests": {
+    "LEFT_OUT.tsv": "dc320771473cb03816886d2498a5d26b9eb3870b80df19b26f151650f9029a7c",
+    "TRACES_MANIFEST.tsv": "c130c55bc00e2033747faa10260304063a9798dba5c02efb02372385ec67413f"
+  }
+}

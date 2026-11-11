@@ -1,0 +1,103 @@
+id	value	formula
+rows_total	395	rows of rollouts.tsv
+d_rows	110	rows, scope d
+m_cap	115	capped (tool_calls >= 28)
+m_rows	285	rows, scope m
+m_graph_calls	0	sum n_graph_calls
+m_edit_failed	486	failed edit cases, budget refusals left out
+m_edit_recovered	96	analysed failures recovered
+m_fail_half_n	5	failed_edit_features.n_half over the analysed failures
+d0_disc	44	discordant summed over pairs
+d0_pairs	285	tasks summed over pairs
+d_tasks	17	distinct task_id, scope dev
+charged_mismatch	0	rollouts with charged_calls != tool_calls
+s1_nogold_moved	9	seed 1 rows stamped no gold file and corrected gold file touched
+s1_nogold_stamped	18	seed 1 rows with patch_class_stamped no gold file
+m_cut_changed	1	capped, corrected != stamped
+d_cut_changed	2	capped, corrected != stamped
+m_cut	104	capped, corrected class cut_off_mid_work
+m_cut_undecided	0	capped with corrected class undecided (CLAR6A)
+m_att28	11	attempted >= 28 and charged < 28
+m_att28_parse	335	failed edits lacking a mandatory argument in those rollouts
+m_parse_fail	393	cause F lacking a mandatory argument
+m_kind_read_pct	71.1	chg_read / chg total, half up
+m_kind_edit_pct	16.7	chg_edit / chg total, half up
+m_kind_test_pct	12.3	chg_test / chg total, half up
+m_att_read_pct	66.1	att_read / att total, half up
+m_att_edit_pct	22.4	att_edit / att total, half up
+m_att_test_pct	11.5	att_test / att total, half up
+m_edit_calls	1098	sum edit_file_calls
+m_edit_refused	45	failed edit cases refused by budget
+m_resend_identical	359	v082 next action identical resend
+m_resend_strict	345	next call same tool and identical arguments
+m_fail_half_held	247	failures held by those rollouts
+m_episodes	85	episode openers among analysed failures
+m_episodes_recovered	53	recovered episode openers
+m_rec_calls_median	2	median calls until recovery, recovered episodes
+m_unrec_unres	26	unresolved with an unrecovered episode
+m_unresolved	174	rows minus resolved
+m_cut_unres	89	unresolved and corrected cut_off_mid_work
+m_pc_moved	26	patch class (patch_class_v2) != patch_class_stamped
+d_pc_moved	12	patch class (patch_class_v2) != patch_class_stamped
+m_patch_missing	35	flag patch_not_stored
+m_patch_conflict	0	flag size_field_nonzero_but_empty, or missing file with size > 0
+m_wall_median	146.63	duration_seconds, v083b quantile rule
+m_compaction_mean	1.3	mean compaction_events, one decimal half up
+m_proj_over_30	45	proj_b28_30 > 480
+m_proj_over	35	proj_b28_34 > 480
+m_proj_over_40	22	proj_b28_40 > 480
+b_rows	58	rows, scope b
+m_resolved	111	resolved rows
+b_resolved	27	resolved rows
+b_cap	29	capped (tool_calls >= 28)
+b_cut	27	capped, corrected class cut_off_mid_work
+b_att28	3	attempted >= 28 and charged < 28
+b_edit_failed	42	failed edit cases, budget refusals left out
+b_edit_recovered	36	analysed failures recovered
+b_episodes	29	episode openers among analysed failures
+b_episodes_recovered	24	recovered episode openers
+m_fail_rollouts	71	rollouts with an analysed failure
+m_fail_rollouts_resolved	18	resolved among them
+b_fail_rollouts	21	rollouts with an analysed failure
+b_fail_rollouts_resolved	8	resolved among them
+m_pc_gold	95	unresolved with patch class gold file touched
+m_pc_nogold	26	unresolved with patch class no gold file
+m_pc_scratch	18	unresolved with patch class scratch only
+m_pc_nopatch	35	unresolved with patch class no patch
+b_pc_gold	16	unresolved with patch class gold file touched
+b_pc_nogold	9	unresolved with patch class no gold file
+b_pc_scratch	4	unresolved with patch class scratch only
+b_pc_nopatch	2	unresolved with patch class no patch
+b_graph_calls	0	sum n_graph_calls
+s1_valid	95	main rows of seed 1
+s2_valid	95	main rows of seed 2
+s7_valid	95	main rows of seed 7
+s1_resolved	36	resolved, seed 1
+s2_resolved	36	resolved, seed 2
+s7_resolved	39	resolved, seed 7
+m_res_fastapi	71	resolved, fastapi
+m_rows_fastapi	174	rows, fastapi
+m_res_rich	40	resolved, rich
+m_rows_rich	111	rows, rich
+d0_pct	15.4	d0 percent, half up
+cls_always	26	rule 3 three seed class
+cls_sometimes	22	rule 3 three seed class
+cls_never	47	rule 3 three seed class
+cls_incomplete	0	rule 3 three seed class
+p12_both	30	pair table of seeds 1 and 2, both
+p12_disc	12	pair table of seeds 1 and 2, discordant
+p12_neither	53	pair table of seeds 1 and 2, neither
+draw_mean_pct	38.9	draw simulation mean_pct
+draw_lo_pct	34.7	draw simulation p2_5_pct
+draw_hi_pct	43.2	draw simulation p97_5_pct
+ft_8_pct	0.1	false trigger share m=8 (m_used 8)
+ft_16_pct	1.1	false trigger share m=16 (m_used 16)
+ft_18_pct	1.4	false trigger share m=18 (m_used 18)
+ft_36_pct	2.7	false trigger share m=36 (m_used 36)
+ft_95_pct	2.2	false trigger share m=95 (m_used 95)
+gmin_8	5	g_min at d0, m=8
+gmin_16	6	g_min at d0, m=16
+gmin_18	6	g_min at d0, m=18
+gmin_36	8	g_min at d0, m=36
+gmin_95	10	g_min at d0, m=95
+m_eps_refusal	36	episode openers refused by budget

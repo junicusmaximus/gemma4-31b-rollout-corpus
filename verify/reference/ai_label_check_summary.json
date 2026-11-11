@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "corrected_cap": {
+      "source_sha256": "d3a71ec863eee104249f5197b7d15589e4fa928e299cb80a8533c2429e08dac3",
+      "summary_lines": [
+        "cap_position\tagree 15 of 15\tdisagree 0\tcannot decide 0",
+        "window_positions\tagree 15 of 15\tdisagree 0\tcannot decide 0",
+        "window_has_edit\tagree 15 of 15\tdisagree 0\tcannot decide 0",
+        "test_after_last_successful_edit\tagree 15 of 15\tdisagree 0\tcannot decide 0",
+        "patch_at_cap\tagree 15 of 15\tdisagree 0\tcannot decide 0",
+        "cap_class\tagree 15 of 15\tdisagree 0\tcannot decide 0"
+      ]
+    },
+    "original": {
+      "source_sha256": "e4abfad4157d0e45cd3e6bd62350b40bd1f94c8b763a99c848b338a879872998",
+      "summary_lines": [
+        "patch_class\tagree 27\tdisagree 3\tcannot decide 0\tweighted agreement 0.905 (cannot decide left out: 0)",
+        "gold_file_hit\tagree 27\tdisagree 3\tcannot decide 0\tweighted agreement 0.905 (cannot decide left out: 0)",
+        "capped\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "cap_class\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "failed_edits_not_budget\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "episodes\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "episodes_recovered\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "test_after_last_successful_edit\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "graph_tool_calls\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)"
+      ]
+    },
+    "patch_v2": {
+      "source_sha256": "4ec6cd2ce22540dcb584db1800bcffcfaf3be4811a72e61faf106731eae55d0b",
+      "summary_lines": [
+        "patch_class\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "gold_file_hit\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "capped\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "cap_class\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "failed_edits_not_budget\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "episodes\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "episodes_recovered\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "test_after_last_successful_edit\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)",
+        "graph_tool_calls\tagree 30\tdisagree 0\tcannot decide 0\tweighted agreement 1.000 (cannot decide left out: 0)"
+      ]
+    }
+  },
+  "scope": "Second AI reading under authors rules, not independent human validation"
+}

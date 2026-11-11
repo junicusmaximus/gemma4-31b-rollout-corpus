@@ -1,0 +1,209 @@
+{
+  "derivative": "Only private input-path mapping omitted; numeric/readout fields unchanged",
+  "results": {
+    "d0": {
+      "d0": 0.1543859649122807,
+      "d0_pct": 15.4,
+      "discordant": 44,
+      "tasks": 285
+    },
+    "draws": {
+      "mean": 0.38936000000000004,
+      "mean_pct": 38.9,
+      "p2_5": 0.3473684210526316,
+      "p2_5_pct": 34.7,
+      "p97_5": 0.43157894736842106,
+      "p97_5_pct": 43.2,
+      "sd": 0.023365993467102626,
+      "sd_pct": 2.3,
+      "tasks_included": 95,
+      "tasks_left_out": 0
+    },
+    "false_trigger": {
+      "16": {
+        "eligible": 95,
+        "m_used": 16,
+        "share": 0.0111,
+        "share_pct": 1.1
+      },
+      "18": {
+        "eligible": 95,
+        "m_used": 18,
+        "share": 0.0141,
+        "share_pct": 1.4
+      },
+      "36": {
+        "eligible": 95,
+        "m_used": 36,
+        "share": 0.0268,
+        "share_pct": 2.7
+      },
+      "8": {
+        "eligible": 95,
+        "m_used": 8,
+        "share": 0.0005,
+        "share_pct": 0.1
+      },
+      "95": {
+        "eligible": 95,
+        "m_used": 95,
+        "share": 0.022,
+        "share_pct": 2.2
+      }
+    },
+    "g_min": {
+      "16": {
+        "frac": 0.375,
+        "g_min": 6,
+        "pp": 37.5
+      },
+      "18": {
+        "frac": 0.3333333333333333,
+        "g_min": 6,
+        "pp": 33.3
+      },
+      "36": {
+        "frac": 0.2222222222222222,
+        "g_min": 8,
+        "pp": 22.2
+      },
+      "8": {
+        "frac": 0.625,
+        "g_min": 5,
+        "pp": 62.5
+      },
+      "95": {
+        "frac": 0.10526315789473684,
+        "g_min": 10,
+        "pp": 10.5
+      }
+    },
+    "pairs": {
+      "1|2": {
+        "both": 30,
+        "costly_rule": {
+          "b": 6,
+          "c": 6,
+          "triggered": false
+        },
+        "discordance": 0.12631578947368421,
+        "discordance_pct": 12.6,
+        "discordant": 12,
+        "n": 95,
+        "neither": 53,
+        "only_first": 6,
+        "only_second": 6
+      },
+      "1|7": {
+        "both": 30,
+        "costly_rule": {
+          "b": 6,
+          "c": 9,
+          "triggered": false
+        },
+        "discordance": 0.15789473684210525,
+        "discordance_pct": 15.8,
+        "discordant": 15,
+        "n": 95,
+        "neither": 50,
+        "only_first": 6,
+        "only_second": 9
+      },
+      "2|7": {
+        "both": 29,
+        "costly_rule": {
+          "b": 7,
+          "c": 10,
+          "triggered": false
+        },
+        "discordance": 0.17894736842105263,
+        "discordance_pct": 17.9,
+        "discordant": 17,
+        "n": 95,
+        "neither": 49,
+        "only_first": 7,
+        "only_second": 10
+      }
+    },
+    "readings": [
+      "R1 a row is valid iff its JSON field resolved is a JSON boolean; if a seed file has several rows for one task the first row with a boolean resolved is used and the duplicates are counted (duplicate_rows).",
+      "R1 error texts are counted over valid rows only (rule 10), keyed by the exact error string.",
+      "R2 seed pairs are all unordered pairs in argument order; 'first' is the earlier seed argument.",
+      "R3 three-seed classes are computed when exactly three seeds are given; two-seed classes are computed for every pair.",
+      "R4 each draw calls rng.integers(0, k_t) once as a vector over the included tasks sorted by task id; valid seeds of a task are in argument order; the rate is a fraction (0..1) and is also printed in percent.",
+      "R5b each draw: rng.choice(eligible tasks sorted by id, size=min(m, n), replace=False), then for each drawn task in drawn order rng.choice(its valid seeds in argument order, size=2, replace=False) as (first, second).",
+      "R5c g_min uses the unrounded d0; if d0 is undefined (no seed pair with tasks) g_min is not computed.",
+      "R10 percentages are rounded half up to one decimal from the decimal string of the float (Decimal(repr(x)))."
+    ],
+    "seeds": {
+      "1": {
+        "duplicate_rows": 0,
+        "error_rows": 2,
+        "errors": {
+          "Agent exceeded session timeout (8.0 min)": 1,
+          "Agent exceeded turns budget (80 turns)": 1
+        },
+        "invalid_rows": 0,
+        "resolve_rate": 0.37894736842105264,
+        "resolve_rate_pct": 37.9,
+        "resolved": 36,
+        "valid": 95
+      },
+      "2": {
+        "duplicate_rows": 0,
+        "error_rows": 3,
+        "errors": {
+          "Agent exceeded session timeout (8.0 min)": 2,
+          "Agent exceeded turns budget (80 turns)": 1
+        },
+        "invalid_rows": 0,
+        "resolve_rate": 0.37894736842105264,
+        "resolve_rate_pct": 37.9,
+        "resolved": 36,
+        "valid": 95
+      },
+      "7": {
+        "duplicate_rows": 0,
+        "error_rows": 3,
+        "errors": {
+          "Agent exceeded session timeout (8.0 min)": 2,
+          "Agent exceeded turns budget (80 turns)": 1
+        },
+        "invalid_rows": 0,
+        "resolve_rate": 0.4105263157894737,
+        "resolve_rate_pct": 41.1,
+        "resolved": 39,
+        "valid": 95
+      }
+    },
+    "stability": {
+      "three_seed": {
+        "always": 26,
+        "incomplete": 0,
+        "never": 47,
+        "sometimes": 22
+      },
+      "two_seed": {
+        "1|2": {
+          "both": 30,
+          "incomplete": 0,
+          "neither": 53,
+          "one": 12
+        },
+        "1|7": {
+          "both": 30,
+          "incomplete": 0,
+          "neither": 50,
+          "one": 15
+        },
+        "2|7": {
+          "both": 29,
+          "incomplete": 0,
+          "neither": 49,
+          "one": 17
+        }
+      }
+    }
+  },
+  "source_sha256": "3809371a892ea4d99babec42cba3a97949fdc6127a43d3ebe91ad8c58e42bf6d"
+}
